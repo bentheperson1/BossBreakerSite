@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Boss Breaker</title>
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, ul, li, a, img {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: 0;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            background: url('images/bg_tile.png') repeat fixed; /* Parallax background */
+            background-size: auto; /* Background tiling */
+        }
+
+        /* Centered Content */
+        .content-container {
+            max-width: 1300px; /* Maximum width of the content */
+            margin: 0 auto; /* Center the content */
+            padding: 20px; /* Padding around the content */
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background for readability */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+			padding-top: 50px;
+			padding-bottom: 30px;
+			padding-left: 150px;
+			padding-right: 150px;
+        }
+
+        .hero img {
+            width: 120%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .call-to-action {
+            margin: 20px 0;
+            padding: 15px 30px;
+            background-color: #5f33ff; /* Button color */
+            border: none;
+			border-radius: 6px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .about-section, .press-kit-section, .gallery-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-section h2, .press-kit-section h2, .gallery-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+        }
+
+        .about-content img {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 426px;
+            height: 240px;
+            object-fit: cover;
+            border: 0.2px solid #ffffff00;
+        }
+
+        /* Press Kit Section */
+        .press-kit-button {
+            padding: 15px 30px;
+            background-color: #ff5733; /* Button color */
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/game-logo.png" alt="Game Marketing Image">
+			<br><br><br>
+            <p>Boss Breaker is a twin-stick beat 'em up set within the Nexus Orion Labs corporate compound. You were hired as a product tester for the all-new "Breaker Fists," but after a chance encounter and a paperwork mixup, you'll have to unravel the secrets of your employer and take them down once and for all.</p>
+            <br>
+			<button class="call-to-action">Wishlist On Steam!</button>
+        </section>
+		<hr>
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>About the Game</h2>
+            <div class="about-content">
+                <p>Your first paragraph goes here...</p>
+                <p>Your second paragraph goes here...</p>
+                <img src="path/to/your/gif.gif" alt="Gameplay GIF">
+            </div>
+        </section>
+		<hr>
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Screenshot Gallery</h2>
+            <div class="gallery">
+                <img src="images/bb1.png" alt="Screenshot">
+                <img src="images/bb3.png" alt="Screenshot">
+                <img src="images/bb4.png" alt="Screenshot">
+                <img src="images/bb7.png" alt="Screenshot">
+				<img src="images/bb5.png" alt="Screenshot">
+                <img src="images/bb8.jpg" alt="Screenshot">
+				<img src="images/bb2.png" alt="Screenshot">
+                <img src="images/bb9.png" alt="Screenshot">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <!-- Press Kit Section -->
+        <section class="press-kit-section">
+            <h2>Press Kit</h2>
+            <p>Download our press kit for more information.</p>
+            <button class="press-kit-button">Download Press Kit</button>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fifth Edge Studios. All rights reserved.</p>
+    </footer>
+</body>
+</html>
