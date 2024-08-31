@@ -38,9 +38,12 @@
             text-align: center;
             padding-top: 50px;
 			padding-bottom: 30px;
-			padding-left: 150px;
-			padding-right: 150px;
         }
+
+		.hero h1 {
+			padding-left: 300px;
+			padding-right: 300px;
+		}
 
         .hero img {
             width: 120%;
@@ -81,9 +84,17 @@
 
         .about-content img {
             width: 100%;
-            max-width: 400px;
+            max-width: 90%;
             margin: 20px 0;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 5px;
         }
+
+		.about-content h2 {
+			text-align: center;
+		}
 
         /* Gallery Section */
         .gallery {
@@ -193,18 +204,19 @@
         <section class="hero">
             <img src="images/game-logo.png" alt="Game Marketing Image">
 			<br><br>
-            <p>Boss Breaker is a twin-stick beat 'em up set within the Nexus Orion Labs corporate compound. You were hired as a product tester for the all-new "Breaker Fists," but after a chance encounter and a paperwork mixup, you'll have to unravel the secrets of your employer and take them down once and for all.</p>
+            <h1>A stylized top down beat 'em up based around punching literally anything that gets in your way.</h1>
+			<br><br>
+			<!-- <iframe frameborder="0" width="640" height="360" src="https://www.youtube.com/embed/V73AW_J0X40"></iframe> -->
             <br>
-			<button class="call-to-action">Wishlist On Steam!</button>
+			<iframe src="https://store.steampowered.com/widget/2869030/" frameborder="0" width="646" height="190"></iframe>
         </section>
         <hr>
         <!-- About Section -->
         <section class="about-section">
-            <h2>About the Game</h2>
             <div class="about-content">
-                <p>Your first paragraph goes here...</p>
-                <p>Your second paragraph goes here...</p>
-                <img src="path/to/your/gif.gif" alt="Gameplay GIF">
+                <h2>About</h2>
+				<img src="images/cropped-fight-2.gif">
+				<p>Boss Breaker is a twin-stick beat 'em up set within the Nexus Orion Labs corporate compound. You were hired as a product tester for the all-new "Breaker Fists," but after a chance encounter and a paperwork mixup, you'll have to unravel the secrets of your employer and take them down once and for all.</p>
             </div>
         </section>
         <hr>
@@ -231,12 +243,12 @@
                 <img id="modalImage" src="">
             </div>
         </div>
-
+		<hr>
         <!-- Press Kit Section -->
         <section class="press-kit-section">
             <h2>Press Kit</h2>
             <p>Download our press kit for more information.</p>
-            <button class="press-kit-button">Download Press Kit</button>
+            <button class="press-kit-button">Press Kit Coming Soon!</button>
         </section>
     </div>
 
