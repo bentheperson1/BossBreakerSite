@@ -36,6 +36,10 @@
             background-size: auto;
         }
 
+        a {
+            color: #54c9ff;
+        }
+
         /* Centered Content */
         .content-container {
             max-width: 1300px;
@@ -195,6 +199,42 @@
             border: 0;
         }
 
+        .team-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member:nth-child(odd) .image {
+            order: 1;
+            transform: scaleX(-1);
+        }
+        .team-member:nth-child(even) .image {
+            order: -1;
+        }
+        .image {
+            flex: 1;
+            margin: 10px;
+        }
+        .content {
+            flex: 2;
+            padding: 10px;
+        }
+        .team-member img {
+            max-width: 100%;
+            height: auto;
+        }
+        .team-member h3 {
+            margin: 0 0 10px;
+        }
+        .team-member p {
+            margin: 0;
+        }
+
         /* Footer */
         footer {
             background-color: #000;
@@ -299,7 +339,53 @@
             </div>
         </div>
 		<hr>
-        <!-- Press Kit Section -->
+
+        <div class="team-section">
+            <h2>Meet the Team</h2>
+        
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="content">
+                    <h1>Ben Holland</h1>
+                    <p>The founder and owner of Fifth Edge, Ben is also the programmer, artist, and designer for Boss Breaker. Whenever he's not working on the game, he's usually working on side projects or playing games with friends.</p>
+                    <br>
+                    <a href="https://benholland.xyz/" style="padding-right: 25px;" target="_blank">Portfolio Website</a>
+                    <a href="https://x.com/ham_null" target="_blank">Twitter</a>
+                </div>
+
+                <div class="image">
+                    <img src="images/red-char.png" alt="Team Member 1">
+                </div>
+            </div>
+        
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="image">
+                    <img src="images/orange-char.png" alt="Team Member 2">
+                </div>
+                <div class="content">
+                    <h1>Luca Borroni</h1>
+                    <p>The team's resident sound designer, Lucas joined midway through Boss Breaker's development and has since helped overhaul the game's audio and general presence.</p>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="content">
+                    <h1>Antonello Sgnaolin</h1>
+                    <p>Antonello is a music composer from Rome who's always been passionate about music. Since getting his degree in Sound Design at the European Institure of Design, Antonello has worked full time as Music Assitant for Andrea Farri, a top Italian composer.</p>
+                    <br>
+                    <a href="https://www.antonellosgnaolin.com/" style="padding-right: 25px;" target="_blank">Portfolio Website</a>
+                    <a href="https://www.instagram.com/antynator" target="_blank">Instagram</a>
+                </div>
+                <div class="image">
+                    <img src="images/white-char.png" alt="Team Member 3">
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+
         <section class="press-kit-section">
             <h2>Contact</h2>
 
