@@ -8,13 +8,14 @@
 	<meta property="og:title" content="Boss Breaker - A Beat 'Em Up Adventure Game">
     <meta property="og:description" content="In an underground corporate facility, a lowly employee goes all out to uncover the truth and gain their freedom. ">
     <meta property="og:image" content="http://bossbreakerga.me/images/lib-header.png">
-    <meta property="og:url" content="http://bossbreakerga.me/">
+    <meta property="og:url" content="http://bossbreakerga.me/#">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Boss Breaker Game">
 	<meta content="#4881fa" data-react-helmet="true" name="theme-color" />
 	<meta name="twitter:card" content="http://bossbreakerga.me/images/lib-header.png">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Boss Breaker</title>
     <style>
         /* Basic Reset */
@@ -24,7 +25,7 @@
             list-style: none;
             text-decoration: none;
             border: 0;
-            box-sizing: border-box; /* Added for better responsiveness */
+            box-sizing: border-box;
         }
 
         body {
@@ -47,16 +48,17 @@
         .hero {
             text-align: center;
             padding-top: 50px;
-			padding-bottom: 30px;
+            padding-bottom: 30px;
         }
 
-		.hero h1 {
-			padding-left: 300px;
-			padding-right: 300px;
-		}
+        .hero h1 {
+            margin: 0 auto;
+            padding: 0 10%;
+            font-size: 1.8em;
+        }
 
         .hero img {
-            width: 120%;
+            width: 90%;
             max-width: 800px;
             margin-bottom: 20px;
         }
@@ -90,21 +92,24 @@
 
         .about-content p {
             margin-bottom: 20px;
+            padding: 0 10%;
+            font-size: 18px;
         }
 
         .about-content img {
             width: 100%;
             max-width: 90%;
             margin: 20px 0;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
         }
 
-		.about-content h2 {
-			text-align: center;
-		}
+        .about-content h2 {
+            text-align: center;
+            font-size: 40px;
+        }
 
         /* Gallery Section */
         .gallery {
@@ -120,7 +125,7 @@
             height: auto;
             object-fit: cover;
             border: 0.2px solid #ffffff00;
-            cursor: pointer; /* Indicate clickable images */
+            cursor: pointer;
         }
 
         /* Modal for Enlarged Images */
@@ -132,25 +137,25 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9); /* Darker background for better focus */
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
         .modal-content {
             margin: 0 auto;
             display: block;
-            width: 90%; /* Increased width */
-            max-width: 1200px; /* Larger max width for modal images */
+            width: 90%;
+            max-width: 1200px;
             height: auto;
             padding: 20px;
             position: relative;
             top: 50%;
-            transform: translateY(-50%); /* Center modal content vertically */
+            transform: translateY(-50%);
         }
 
         .modal-content img {
             width: 100%;
             height: auto;
-            display: block; /* Ensure the image fits within the modal */
+            display: block;
         }
 
         .modal-close {
@@ -158,7 +163,7 @@
             top: 20px;
             right: 30px;
             color: #fff;
-            font-size: 40px; /* Larger close button for better visibility */
+            font-size: 40px;
             cursor: pointer;
         }
 
@@ -174,13 +179,39 @@
             margin-top: 20px;
         }
 
+		.iframe-container {
+            display: flex; /* Added flexbox */
+            justify-content: center; /* Centers the iframe */
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            max-width: 646px; /* Sets maximum width for iframe */
+            height: 190px; /* Preserves the height */
+            border: 0;
+        }
+
         /* Footer */
         footer {
             background-color: #000;
             color: #fff;
             padding: 20px;
             text-align: center;
-            margin-top: 50px;
+        }
+
+        /* Social Media Buttons */
+        .social-buttons {
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 30px;
         }
 
         /* Media Queries */
@@ -188,12 +219,16 @@
             .hero img {
                 width: 90%;
             }
+            .hero h1 {
+                padding: 0 5%;
+                font-size: 1.5em;
+            }
             .call-to-action, .press-kit-button {
                 font-size: 16px;
                 padding: 10px 20px;
             }
             .about-content {
-                padding: 0 15px;
+                padding: 0 5%;
             }
             .gallery img {
                 max-width: 100%;
@@ -201,7 +236,11 @@
             }
             .modal-content {
                 width: 95%;
-                max-width: 90%; /* Adjust modal width for mobile */
+                max-width: 90%;
+            }
+            .social-buttons a {
+                font-size: 24px;
+                margin: 0 5px;
             }
         }
     </style>
@@ -218,16 +257,22 @@
 			<br><br>
 			<!-- <iframe frameborder="0" width="640" height="360" src="https://www.youtube.com/embed/V73AW_J0X40"></iframe> -->
             <br>
-			<iframe src="https://store.steampowered.com/widget/2869030/" frameborder="0" width="646" height="190"></iframe>
+			<div class="iframe-container">
+                <iframe src="https://store.steampowered.com/widget/2869030/" frameborder="0"></iframe>
+            </div>
         </section>
         <hr>
         <!-- About Section -->
         <section class="about-section">
             <div class="about-content">
                 <h2>About</h2>
-				<img src="images/cropped-fight-2.gif">
 				<p>Boss Breaker is a twin-stick beat 'em up set within the Nexus Orion Labs corporate compound. You were hired as a product tester for the all-new "Breaker Fists," but after a chance encounter and a paperwork mixup, you'll have to unravel the secrets of your employer and take them down once and for all.</p>
-            </div>
+				<img src="images/cropped-fight-2.gif">
+				<p>Any dissent is immediately silenced, and anyone caught spreading it is never seen again. The entire company is against you, so do you have what it takes to take it down without being annihilated first?</p>
+				<img src="images/cropped-fight-4.gif">
+				<p>Designed to be picked up and played right away, Boss Breaker allows you to ignore the story completely if you want, instead opting to focus on destroying everything in your path. If that's not your style, stick around and uncover the secret history of Nexus Orion Labs. No matter how you play, we have you covered.</p>
+				<img src="images/cropped-fight-6.gif">
+			</div>
         </section>
         <hr>
         <!-- Gallery Section -->
@@ -256,9 +301,19 @@
 		<hr>
         <!-- Press Kit Section -->
         <section class="press-kit-section">
-            <h2>Press Kit</h2>
-            <p>Download our press kit for more information.</p>
-            <button class="press-kit-button">Press Kit Coming Soon!</button>
+            <h2>Contact</h2>
+
+			<p>Email: staff [at] fifthedgestudios [dot] com</p>
+			<br>
+			<p>Press Kit Coming Soon!</p>
+
+			<div class="social-buttons">
+                <a href="https://discord.gg/A7QQ2HrxnW" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://x.com/fifth_edge" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@null_ham/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://store.steampowered.com/curator/37383610" target="_blank"><i class="fa-brands fa-steam"></i></a>
+                <a href="https://fifthedgestudios.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+            </div>
         </section>
     </div>
 
